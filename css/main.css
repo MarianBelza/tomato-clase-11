@@ -1,0 +1,63 @@
+
+.producto__texto--red{
+    color: red;
+}
+
+/* ESTILOS PARA LOS ENCLACES */
+
+a:link{
+    color: tomato;
+    text-decoration: none;
+    background-color: black;
+}
+
+/* para cambiar el estado de los enclaces visitados */
+a:visited{
+    color: whitesmoke;
+}
+
+/* cuando el boton este siendo apretado va a cambiar su comportamiento */
+a:active{
+    background-color: teal;
+    padding: 1rem;
+    margin: 1rem;
+    text-shadow: 3px 3px 3px black;
+}
+
+/* cambiar el comportamiento cuando el usuario pase el mouse por encima */
+a:hover{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.caja{
+    margin: 2rem;
+    background-color: teal;
+    width: 100px;
+    height: 100px;
+}
+
+.caja:hover{
+    background-color: tomato;
+    box-shadow: 13px 13px 10px black;
+    border-radius: 100%;
+}
+
+/* codigo de ejemplo dos */
+
+/* para darle estilos a los hijos de un contenedor o clase */
+.parrafos p:first-child{
+    background-color: tomato;
+}
+
+/* codigo de ejemplo */
+
+.parrafoTres div:last-of-type{
+    color: tomato
+}
+
+/* codigo de ejemplo */
+/* si quisiera que sean los pares o impares se usa EVEN para pares y ODD para impares (dentro del parentesis) . si quisiera que se aplique el color cada 3 elementos, le pongo 3n*/
+.lista :nth-child(3n){
+    background-color: tomato;
+}
